@@ -1,0 +1,67 @@
+
+h1 {
+    color: darkgrey;
+    flex-direction: center;
+    align-items: flex-end;
+
+}
+
+body{
+    background-color: maroon;
+}
+ img{
+    display: inline;
+    
+}
+.mediafreak img{
+    height: 50%;
+}
+#navigation {
+left:0;
+position: fixed;
+top:0;
+width: 50vw;
+}
+
+#navigatoin ul{
+    align-items: center;
+    
+}
+#navigation > ul >li{
+    color: black;
+    display: inline;
+    padding: 5px;
+    margin: 10px;
+    position: relative;
+    
+}
+
+#navigation .dropdown{
+    display: none;
+    
+
+}
+#navigation a:hover + .dropdown {
+    display: block;
+}
+footer{
+    align-items: flex-end;
+    
+
+}
+
+.aboutus img {
+    display: inline;
+
+}
+
+@media (min-width:750px){
+    #root {
+        background-color: aquamarine;
+        grid-auto-columns: 15% auto;
+        grid-template-rows: auto auto min-content;
+        grid-template-areas: 
+        "navigation header"
+        "navigation content"
+        "navigation footer";
+    }
