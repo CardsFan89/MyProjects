@@ -1,4 +1,4 @@
-import WelcometoMediaFreaks from './src/store';
+import WelcometoMediaFreaks from './src/blog';
 
 var root = document.querySelector('#root');
 

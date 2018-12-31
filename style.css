@@ -1,34 +1,35 @@
 
-h1 {
-    color: darkgrey;
-    flex-direction: center;
-    align-items: flex-end;
-
-}
 
 body{
-    background-color:maroon;
+    margin:0px;
+    padding:0;
+   
+}
+h1{
+    color: grey;
+    margin: center;
+    position:static;
+    padding: 10;
+    align-items: 
 }
 
+#header {
+    background-image: url(Review.jpg);
+    background-position: center right;
+    grid-area: header;
+  }
+ 
  img{
+     
     height: 20%;
-    background-color: darkgray;
-    margin: 0;
-    padding: 0;
-    background: grey;
+    margin: ;
+    padding: 10;
     position: absolute;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
     overflow: auto;
 }
 
-#navigation {
-width: 100%;
-background-color: darkgrey;
-margin-left: 35px;
-overflow: auto;
-
-}
 
 ul{
     padding: 0;
@@ -39,6 +40,21 @@ ul{
 li{
     float:left;
 }
+.logo img{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+#content {
+    background-color: maroon;
+    grid-area: content;
+    padding: 20px;
+  }
+
+#footer{
+    background-color: darkcyan;
+    grid-area: footer;
+}
 
 nav a {
     width:100px;
@@ -46,7 +62,7 @@ nav a {
     padding: 20px 15px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    color: cornsilk;
+    color: grey;
     text-align: center;
 }
 #navigatoin ul{
@@ -62,32 +78,18 @@ nav a {
     
 }
 
-#navigation .dropdown{
-    display: none;
-    
+.aboutus{
+background-color: antiquewhite;
 
 }
-#navigation a:hover + .dropdown {
-    display: block;
-}
-footer{
-    align-items: flex-end;
-    
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    width: 90%;
+  }
 
-}
-
-.aboutus img {
-    display: inline;
-
+#footer{
+    background-color: darkcyan;
+    grid-area: footer;
 }
 
-@media (min-width:750px){
-    #root {
-        background-color: aquamarine;
-        grid-auto-columns: 15% auto;
-        grid-template-rows: auto auto min-content;
-        grid-template-areas: 
-        "navigation header"
-        "navigation content"
-        "navigation footer";
-    }
