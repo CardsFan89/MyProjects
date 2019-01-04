@@ -1,85 +1,50 @@
 
 
+ .img{
+    display:inline-block;
+    height: 10px;
+    width: 30px;
+    padding-left: 10px;
+   padding-top: 10px;
+   align-items: center;
+}
+
+nav li{
+    background-color: maroon;
+    color:white;
+    display: inline-block;
+    height:100px;
+    width:100px;
+    padding-left: 10px;
+    padding-top: 10px;
+    align-items: center;
+}
+
+
+
 body{
-    margin:0px;
-    padding:0;
+    background-color:aquamarine;
+    text-align: center;
+    display:block;
+    justify-content: center;
    
 }
-h1{
-    color: grey;
-    margin: center;
-    position:static;
-    padding: 10;
-    align-items: 
-}
 
-#header {
-    background-image: url(Review.jpg);
-    background-position: center right;
-    grid-area: header;
-  }
- 
- img{
-     
-    height: 20%;
-    margin: ;
-    padding: 10;
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 10px;
-    overflow: auto;
+figure{
+    margin:0;
 }
+video{
+display: inline;
+z-index: auto;
 
 
-ul{
-    padding: 0;
-    margin: 0 0 0 150px;
-    list-style: none;
-}
 
-li{
-    float:left;
-}
-.logo img{
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-#content {
-    background-color: maroon;
-    grid-area: content;
-    padding: 20px;
-  }
-
-#footer{
-    background-color: darkcyan;
-    grid-area: footer;
-}
-
-nav a {
-    width:100px;
-    display:block;
-    padding: 20px 15px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
-    text-align: center;
-}
-#navigatoin ul{
-    align-items: center;
-    
-}
-#navigation > ul >li{
-    color: black;
-    display: inline;
-    padding: 5px;
-    margin: 10px;
-    position: relative;
-    
 }
 
 .aboutus{
 background-color: antiquewhite;
+background-image: url(MediaFreak.jpg);
+
 
 }
 .container {
@@ -88,8 +53,12 @@ background-color: antiquewhite;
     width: 90%;
   }
 
-#footer{
-    background-color: darkcyan;
-    grid-area: footer;
+footer{
+color: white;
+background-color: gray;
+height: 100%;
+
 }
+
+
 
