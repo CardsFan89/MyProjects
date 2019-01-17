@@ -176,7 +176,16 @@ nav{
     align-content: center;
     text-align: center;
   }
-  
+
+  @media (min-width:750px){
+    #root {
+        grid-auto-columns: 15% auto;
+        grid-template-rows: auto auto min-content;
+        grid-template-areas: 
+        "navigation blog"
+        "navigation contact"
+        "navigation about";
+    }
  
 
   p{
