@@ -121,8 +121,11 @@ nav{
        float: left;
    }
 
-  .logo{
-    text-align: center;
+  .logo img{
+      position: absolute;
+    height: 150px;
+    
+    
 
   }
    nav a{
@@ -154,8 +157,8 @@ nav{
   
 }
 .img-social-media{
-    width: 4%;
-    height:4%;
+    height:100px;
+    text-align: center;
     padding:15px;
     flex-direction: row;
     justify-content:space-around;
@@ -177,6 +180,11 @@ nav{
     text-align: center;
   }
 
+  p{
+    color: blanchedalmond;
+    font-size: 100%;
+}
+
   @media (min-width:750px){
     #root {
         grid-auto-columns: 5% auto;
@@ -188,7 +196,4 @@ nav{
     }
  
 
-  p{
-      color: blanchedalmond;
-      font-size: 100%;
-  }
+  
