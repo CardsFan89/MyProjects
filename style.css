@@ -140,16 +140,31 @@ nav{
        
 
    }
-
+   .grid-container{
+    color: grey;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
+}
    h1{
        font-family: 'Courier New', Courier, monospace;
        color: gray;
        text-align: center;
    }
+
   h2{
       font-family: sans-serif;
       color: gray;
   }
+
+  h4{
+    font-family: sans-serif;
+    color: gray; 
+  }
+
+  
 
 .social-media-row{
     text-align: center;
@@ -166,14 +181,6 @@ nav{
     justify-content:space-around;
 }
 
-.grid-container{
-    color: grey;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width:70%;
-}
 
 .contact {
     height: 200px;
@@ -186,6 +193,8 @@ nav{
     color: blanchedalmond;
     font-size: 100%;
 }
+
+
 
 
 /* Mobile Styles */

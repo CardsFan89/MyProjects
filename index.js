@@ -1,5 +1,4 @@
 
-
 alert('Follow us on Twitter and SoundCloud');
 
 var bod = document.querySelector('body');
@@ -11,3 +10,4 @@ function doStuff(){
 window.onload = function(){
     doStuff();
 };
+
