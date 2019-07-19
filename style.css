@@ -107,36 +107,12 @@ letter-spacing: -.07em;
 filter: alpha(opacity=100);
 
 }
-nav{
-    
-    width:100%;
-    background-color: grey;
-    overflow: auto;
-}
-
-.left{
-    float:left;
-}
 .right{
+    list-style: none;
     float:right;
     margin-right: 50px;
 }
-li{
-    display:inline-block;
-}
-.left li a{
-    width: 100px;
-    display: block;
-    background-color: grey;
-    font-size: 15px;
-    font-family: Arial;
-    text-decoration: none;
-    color:whitesmoke;
-    text-transform: uppercase;
-    font-weight: 1px;
-    text-align: center;
-    padding: 10px;
-}
+
 .right li a{
     width:50px;
     display:block;
@@ -144,19 +120,91 @@ li{
     padding: 10px;
     text-align: center;
 }
-.left li a:hover, .right li a:hover{
-    background-color:maroon;
-    border-radius: 10px;
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
 }
-
-
-  .logo img{
-    position: absolute;
-    height: 100px;
+body{
+    margin: 10px;
+}
+    
+    nav{
+       display:flex;
+       justify-content: space-around;
+       align-items: center;
+       min-height: 8vh;
+       background-color: maroon;
+    }
+    
+    .logo img{
+        float: left;
+        position: relative;
+        height: 100px;
+    
+    }
+      .nav-links{
+          display:flex;
+          justify-content: space-around;
+          width:30%;
+      }
+      .nav-links li{
+          list-style: none;
+      }
+      .nav-links a{
+          text-decoration: none;
+          font-weight: bold;
+          text-align: center;
+          font-size: 14px;
+      }
+      .burger{
+          display:none;
+          cursor: pointer;
+      }
+      .burger div{
+          width: 25px;
+          height:5px;
+          background-color: aquamarine;
+          margin:5px;
+      }
+    
+      @media screen and (max-width:1024px){
+        .nav-links{
+            width:60%;
+        }
+    }
+    @media screen and (max-width:768px){
+        body{
+            overflow-x: hidden;
+            
+        }
+        .nav-links{
+            position: absolute;
+            right:0px;
+            height: 92vh;
+            top:8vh;
+            background-color: blanchedalmond;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width:30%;
+            transform: translateX(100%);  
+            transition: transfrom 0.5s ease-in; 
+        }
+        .nav-links li{
+            opacity: 0;
+        }
+        .burger{
+            display: block;
+        }
+    }
+    
+    .nav-active{
+        transform: translateX(0%);
+    }
     
     
-
-  }
    nav a{
        text-align: center;
        width: 50px;
@@ -169,6 +217,8 @@ li{
   
   p{
       color:black;
+      
+      
   }
    
   
@@ -203,22 +253,6 @@ li{
 
 
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-    
-  }
-  
-  /* Tablet Styles */
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
-    
-    
-    
-  }
-  
-  /* Desktop Styles */
-  @media only screen and (min-width: 961px) {
-    
-  }
 
   
 
