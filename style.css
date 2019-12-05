@@ -1,112 +1,48 @@
 
 
-body {
-margin:10px;
+body,htmlpa {
+height:100%;
+margin:0;
+padding:0;
 }
 
 
-.unbreakable-container{
-    position: absolute;
-    bottom:10px;
-    left:20px;
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
 }
 
-.unbreakable{
-    font-family: Arial, sans-serif;
-    line-height: 1;
-
-    letter-spacing: -0.7em;
-    color:white;
+section{
+    position: relative;
+    width: 100%;
+    padding:50px;
 }
 
-.ks{
-    font-family: 'Arial',sans-serif;
-    font-size: 45px;
-    line-height: 1;
-
-    margin-top: -11px;
-    -webkit-transition: all .5s ease-in-out;
-        transition: all .5s cubic-bezier(.190,1.000, .220, 1.000) 5s;
--webkit-transform:translateX(-1000%);
-    -ms-transform: translateX(-1000%);
-    transform: translateX(-1000%);
-letter-spacing: -1px;
-text-transform: uppercase;
-
-color: grey;
+.circle{
+    position: relative;
+    overflow: hidden;
 }
-
-.animate .ks
-{
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform:translateX(0);
+.circle .circle1{
+    width: 500px;
+    height: 500px;
+    float: left;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle()
 }
-span
-{
-    font-family: 'Ariel', Helvetica, sans-serif;
-    font-size: 40px;
-    text-transform: uppercase;
-    
-    opacity: 0;
+circle .circle2{
+    width: 300px;
+    height: 300px;
+    float: right;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle()
+}
+section h2{
     color:grey;
-
-    filter:alpha(opacity=0);
 }
 
-.able
-{
-    -webkit-transition: all .5s cubic-bezier(.190,1.000) 2.3s;
-        transition: all .5s cubic-bezier( .190, 1.000, .220, 1.000) 2.3s;
-        letter-spacing: -0.7em;
-
-}
-.break{
- -webkit-transition: all .5s ease-in-out 2s;
-    transition: all .5s ease-in-out 2s;
-letter-spacing: -.07em;
-}
-
-.un{
-    -webkit-transition: all .5s ease-in-out 1.7s;
-            transition: all .5s ease-in-out 1.7s;
-        letter-spacing: -.07em;
-}
-
-.animate .un{
-    font-size: 40px;
--webkit-transform: scale(1.5,1.5);
-    -ms-transform: scale(1.5,1.5);
-        transform: scale(1.5,1.5);
-
-        opacity: 1;
-
-        filter: alpha(opacity=100);
-}
-
-.animate .break
-{
-    font-size: 60px;
-
-        -webkit-transform: scale(1.5,1.5);
-            -ms-transform: scale(1.5,1.5);
-            transform: scale(1.5,1.5);
-
-        opacity: 1;
-    filter: alpha(opacity=100);
-}
-
-.animate .able 
-{
-    font-size: 80px;
-
-    -webkit-transform: scale(1.5,1.5);
-        -ms-transform: scale(1.5,1.5);
-            transform: scale(1.5,1.5);
-    opacity: 1;
-filter: alpha(opacity=100);
-
-}
 .right{
     list-style: none;
     float:right;
@@ -121,21 +57,13 @@ filter: alpha(opacity=100);
     text-align: center;
 }
 
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box;
-}
-body{
-    margin: 10px;
-}
-    
+ 
     nav{
        display:flex;
        justify-content: space-around;
        align-items: center;
        min-height: 8vh;
-       background-color: maroon;
+       background-color:gray;
     }
     
     .logo img{
@@ -158,16 +86,7 @@ body{
           text-align: center;
           font-size: 14px;
       }
-      .burger{
-          display:none;
-          cursor: pointer;
-      }
-      .burger div{
-          width: 25px;
-          height:5px;
-          background-color: aquamarine;
-          margin:5px;
-      }
+     
     
       @media screen and (max-width:1024px){
         .nav-links{
@@ -195,28 +114,26 @@ body{
         .nav-links li{
             opacity: 0;
         }
-        .burger{
-            display: block;
-        }
-    }
+       
     
     .nav-active{
         transform: translateX(0%);
     }
     
     
-   nav a{
-       text-align: center;
-       width: 50px;
-       display: block;
-       padding: 20px 15px;
-       text-decoration: none;
-       font-family: Arial, Helvetica, sans-serif; 
-
-   }
+    nav a{
+        text-align: center;
+        width: 15px;
+        display: block;
+        padding: 15px 10px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif; 
+ 
+    }
   
   p{
-      color:black;
+      color:wheat;
+    
       
 
   }
@@ -240,7 +157,6 @@ div.laptop-wrapper {
 }
 div.laptop-wrapper iframe {
     box-sizing: border-box;
-    background: url(https://i.stack.imgur.com/zZNgk.png) center center no-repeat;
     background-size: contain;
     padding: 11.9% 15.5% 14.8%;
     position: absolute;
@@ -254,7 +170,8 @@ div.laptop-wrapper iframe {
    h1{
        font-family: 'Courier New', Courier, monospace;
        color: gray;
-       text-align: center;
+      
+    
    }
 
   h2{
@@ -262,6 +179,11 @@ div.laptop-wrapper iframe {
       color: gray;
   }
 
+  h3{
+    text-align: center;
+    padding:center;
+    margin right: auto;
+  }
   h4{
     font-family: sans-serif;
     color: gray; 
