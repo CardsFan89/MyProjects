@@ -1,11 +1,47 @@
 
 
-body,htmlpa {
-height:100%;
-margin:0;
-padding:0;
+@import "compass/css3";
+
+body{
+    background:black;
+    font-family: 'Varela',sans-serif;
 }
 
+.glitch{
+    color:white;
+    font-size: 100px;
+    position: relative;
+    width:400px;
+    margin:0 auto;
+}
+
+
+.glitch.after{
+    content:attr(data-text);
+    position: absolute;
+    left:2px;
+    text-shadow: -1px 0 red;
+    top: 0;
+    color: white;
+    background:grey;
+    overflow: hidden;
+    clip: rect(0,900px,0,0);
+    animation:noise-anim 2s infinite linear alternate-reverse;
+}
+
+
+
+.glitch::before{
+    content:attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 1px 0 blue;
+    color: white;
+    background: black;
+    overflow: hidden;
+    clip: rect(0,900px,0,0);
+    animation:noise-anim 3s infinite linear alternate-reverse;
+}
 
 *{
     margin: 0;
