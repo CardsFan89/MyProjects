@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+h1{
+margin: auto;
+margin-left: auto;
+color: maroon;
+
+}
 section h2{
     color:grey;
 }
@@ -131,12 +137,6 @@ div.laptop-wrapper iframe {
 }
 
 
-   h1{
-       font-family: 'Courier New', Courier, monospace;
-       color: gray;
-      
-    
-   }
 
   h2{
       font-family: sans-serif;
