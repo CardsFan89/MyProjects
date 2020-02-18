@@ -1,5 +1,5 @@
 
-alert('Follow us on Twitter and SoundCloud');
+alert('Welcome to MediaFreaks!');
 
 var bod = document.querySelector('body');
 
